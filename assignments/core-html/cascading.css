@@ -1,0 +1,44 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 0;
+}
+
+#box1 {
+	background-color: lightblue;
+}
+
+#box2 {
+	background-color: lightcoral;
+}
+
+#box3, #box4 {
+	background-color: lightblue;
+}
+
+#box4 {
+	font-size: 16px;
+	background-color: lightgreen;
+}
+
+#box1, #box2, #box3 {
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	position: relative;
+	left: 0;
+	top: 0;
+	width: 66.66vw;
+	background-color: lightblue;
+}
+
+#box3 {
+	background-color: lightgreen;
+	width: 33.33vw;
+}  
+
+

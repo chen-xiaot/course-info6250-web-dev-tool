@@ -1,0 +1,16 @@
+{
+  "name": "exam1-js-fundamentals",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "node public/word.test.js",
+    "start": "node server.js"
+  },
+  "author": "Brett Ritter <swiftone@swiftone.org>",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.1",
+    "tape": "^4.8.0"
+  }
+}

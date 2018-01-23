@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exam1</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+	<body>
+		<header class="header"><p>Games</p></header>
+
+		<form class="game-selection-form" method="GET" action="redirect">
+			<div id="dropdown-game" class="dropdown">
+				<label>Game</label> 
+  				<select name="game" id="select-game">
+  					<option value="none" selected>None</option>
+  					<option value="word-master">Word Master</option>
+  					<option value="tic-tac-toe" disabled="disabled">Tic Tac Toe</option>
+  				</select>
+  			</div>
+
+			<div id="dropdown-difficulty" class="dropdown">
+				<label>Difficulty</label> 
+  				<select name="diff">
+  					<option value="easy">Easy</option>
+  					<option value="normal" selected>Normal</option>
+  					<option value="hard">Hard</option>
+  				</select>
+  			</div>
+
+  			<div><button id="button-play" type="submit">Play</button></div>
+
+		</form>
+
+	</body>
+
+	<script type="text/javascript" src="games.js" ></script>
+</html>
+

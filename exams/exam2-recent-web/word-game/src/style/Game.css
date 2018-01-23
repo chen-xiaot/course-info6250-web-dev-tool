@@ -1,0 +1,99 @@
+body {
+  background-color: lightgray;
+  font-family: sans-serif;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  font-weight: lighter;
+  font-size: 12px;
+  background: #ea4c88;
+  color: #fff;
+}
+
+.header-name {
+  margin-left: 10px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.header-logout {
+  width: 220px;
+  background-color: #2d3338;
+  color: #eee;
+  outline: 0;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 16px;
+  cursor: pointer;
+  padding: 1rem;
+  text-align: center;
+  font-size: 15px;
+}
+
+.header-logout:hover {
+  background-color: #d4457b;
+  transition: 0.14s ease-out;
+}
+
+.message, .game-info, .rule {
+  color: #d4457b;
+  text-align:center;
+  margin: 10px;
+  font-weight: bolder;
+}
+
+.rule {
+  color: white;
+}
+
+.start-game-area, .guess-area {
+  text-align:center;
+  margin: 10px;
+}
+
+.start-btn, .submit-btn {
+  background-color: #2d3338;
+  color: #eee;
+  outline: 0;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-align: center;
+  padding: 6px;
+  margin: 6px;
+  font-size: 12px;
+}
+
+.start-btn:hover, .submit-btn:hover {
+  background-color: #d4457b;
+  transition: 0.14s ease-out;
+}
+
+.guess-input, .diff-selector {
+  width: 100px;
+  padding: 6px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 12px;
+  background-color: #3b4148;
+  border-radius: 0.25rem;
+  transition: background-color 0.3s;
+}
+
+.submit-btn:disabled, .guess-input:disabled {
+  cursor: not-allowed;
+  background-color: gray;
+}
+
+.guess-history {
+  list-style: none;
+  text-align: center;
+  color: #3b4148;
+}

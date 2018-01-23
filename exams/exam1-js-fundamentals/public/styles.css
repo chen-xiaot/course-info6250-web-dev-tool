@@ -1,0 +1,223 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+
+.header {
+    height: 50px;
+    background-color: maroon;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.game-selection-form {
+	width: 400px;
+	position: absolute;
+	left: calc(50vw - 200px);
+	margin-top: 20px;
+	background-color: white;
+	border: 1px solid black;
+	border-radius: 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.game-selection-form div {
+	padding: 10px;
+    margin: 5px;
+}
+
+#button-play {
+    padding: 10px 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px; 
+}
+
+#button-play:hover {
+    background-color: #3e8e41;
+}
+
+#button-play:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+/*----------nav bar style------start---------------*/
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.navbar .outer-list {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/*.navbar li {
+    float: left;
+}*/
+
+.navbar li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropbtn, .newgamebtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: inherit;
+    background-color: inherit;
+    border: none;
+    height: 50px;
+}
+
+.newgamebtn {
+    background-color: #4CAF50;
+    border-radius: 20px;
+}
+
+
+.newgamebtn:hover, li a:hover, .dropdown:hover .dropbtn {
+    background-color: #ff8080;
+}
+
+.navbar li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content li {
+    color: white;
+    padding: 12px 16px;
+    /*text-decoration: none;*/
+    display: block;
+    text-align: left;
+    float: none;
+}
+
+.diff {
+    cursor: pointer;
+}
+
+.diff-selected {
+    cursor: text;
+    background-color: #ff8080;
+    text-decoration: underline;
+}
+
+/*.dropdown-content li:hover {
+	background-color: #ff8080;
+}*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*----------nav bar style----end----------------*/
+
+
+.type-area {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.type-area button {
+    padding: 5px 12px;
+    font-size: 15px;
+    text-align: center;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px; 
+}
+
+.type-area button:hover {
+    background-color: #3e8e41;
+}
+
+.type-area input {
+    padding: 5px 5px;
+    margin-right: 5px;
+}
+
+#submit:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#message {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    color: #ff8080;
+}
+
+#game-status {
+    border:1px solid gray;
+    text-align: center;
+}
+#game-status li {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.word-list-area, .prev-guess-area {
+    background-color: #bfbfbf;
+    text-align: center;
+    width: 100vw;
+    margin: 30px auto;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.word-list-area p, .prev-guess-area  p{
+    display: block;
+}
+
+#word-list, #prev-guess {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+#word-list li,  #prev-guess li{
+    margin-right: 25px;
+}

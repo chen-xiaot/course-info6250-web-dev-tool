@@ -1,0 +1,22 @@
+body {
+	background-color: lightcoral; /*not the same as requirement*/
+}
+
+.form_container {
+	border: 1px solid black;
+	border-radius: 20px;
+	background-color: lightgreen; /*not the same as requirement*/
+	width: 40vw;
+}
+
+form {
+	padding: 20px 20px 20px 20px;
+}
+
+.checkboxgroup {
+  display: inline-block;
+  text-align: center;
+}
+.checkboxgroup label {
+  display: block;
+}

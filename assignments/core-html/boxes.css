@@ -1,0 +1,35 @@
+#box3 ul {
+	list-style-type: upper-roman;
+}
+
+#box1 {
+	border: solid;
+	border-color: red;
+}
+
+#box2 {
+	border-radius: 25px;
+	border-color: black;
+	border: solid;
+}
+
+#box3 {
+	display: none;
+}
+
+#box2 {
+	font-size: 25px;
+	color: #C0FFEE;
+	/* while I putting color here, the border color also changed, 
+	I think the requirement is just
+	text being the color RGB code #C0FFEE */
+}
+
+/*#box2 strong, ul {
+	color: #C0FFEE;
+}
+*/
+
+.boxes .list li:nth-child(2) {
+	text-decoration: underline;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exam1</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+  <body>
+    <header class="header"><p>Word Master Game</p></header>
+    <nav class="navbar">
+      <ul class="outer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><button class="newgamebtn" id="newgamebtn">New Game</button></li>
+        <li class="dropdown">
+          <button class="dropbtn">Difficulty</button>
+          <ul class="dropdown-content" id="diff-list">
+            <li class="diff" data-diff="easy" >Easy</li>
+            <li class="diff diff-selected" data-diff="normal" >Normal</li>
+            <li class="diff" data-diff="hard">Hard</li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+		
+    <div class="type-area">
+      <input id="guess-input"/><button type="button" id="submit" disabled="disabled">submit</button>
+      <div id="message"></div>
+    </div>
+
+    <div class="game-status-area">
+      <ul id="game-status">
+        <li id="difficulty"></li>
+        <li id="word-length"></li>
+        <li id="guess-times"></li>
+      </ul>
+    </div>
+
+    <div class="word-list-area">
+      <p>word list:</p>
+      <ul id="word-list"></ul>
+    </div>
+
+    <div class="prev-guess-area">
+      <p>previous guesses:</p>
+      <ul id="prev-guess"></ul>
+    </div>
+  </body>
+  <script type="text/javascript" src="word.js"></script>
+  <script type="text/javascript" src="word-dom.js"></script>
+</html>

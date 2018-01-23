@@ -1,0 +1,19 @@
+{
+  "name": "js-basic",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "tape *.test.js | tap-notify | tap-summary",
+    "tdd": "nodemon -x npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^1.12.1",
+    "tap-notify": "^1.0.0",
+    "tap-summary": "^4.0.0",
+    "tape": "^4.8.0"
+  },
+  "main": "fizzbuzz.js",
+  "dependencies": {},
+  "description": ""
+}
